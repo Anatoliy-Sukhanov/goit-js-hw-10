@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav class="container">
+        <ul>
+          <li>
+            <a href="./index.html" class="link">Go back</a>
+          </li>
+          <li class="item">
+            <a href="./1-timer.html" class="link">Countdown timer</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="form">
+        <label class="lab-delay">
+          Delay (ms)
+          <input class="input-delay" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="field-state">
+          <legend class="legend-state">State</legend>
+          <label class="label-radio-state">
+            <input
+              class="input-state"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="label-radio-state">
+            <input
+              class="input-state"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="btn-snack" type="submit">Create notification</button>
+      </form>
+    </main>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
